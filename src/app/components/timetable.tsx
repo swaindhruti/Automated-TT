@@ -198,7 +198,7 @@ const Timetable: React.FC = () => {
                             draggableId={
                               timetable[dayIndex][slotIndex]?.id || ""
                             }
-                            index={0}
+                            index={slotIndex}
                           >
                             {(provided, snapshot) => (
                               <div

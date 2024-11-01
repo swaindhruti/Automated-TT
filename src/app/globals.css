@@ -19,3 +19,44 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Add this to your global CSS file or within a <style> tag in your component */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    text-align: left;
+  }
+
+  thead {
+    float: left;
+  }
+
+  tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  tr {
+    display: table-cell;
+  }
+
+  th, td {
+    display: block;
+    padding: 10px;
+  }
+
+  th {
+    background: #f4f4f4;
+  }
+}
